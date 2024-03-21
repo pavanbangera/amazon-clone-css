@@ -8,6 +8,7 @@
 .border{
     padding: 0 5px;
     border: 1px solid transparent;
+    border-radius: 3px;
 }
 .border:hover{
     border: 1px solid white;
@@ -29,11 +30,9 @@
     padding-top: 4px;
 
 }
-.logo{
-    width: 100%;
+.nav-logo img{
     height: 30px;
-    background-image: url("image/logo.png");
-    background-size: cover;
+background-position: center;
    
 }
 .nav-address{
@@ -63,7 +62,7 @@
     width:50%;
     border-radius: 5px;
 }
-.nav-search:active{
+.nav-search:hover{
   outline: auto;
   outline-color: #FF9900;
   outline-style: solid;
@@ -151,4 +150,195 @@
     font-size: 0.9rem;
     padding-top: 1rem;
     font-weight: 700;
+}
+
+/*top-bar*/
+.top-bar{
+    height: 40px;
+    width: 100%;
+    background-color: #232F3E;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 11px  ;
+}
+.outline{
+    border: 1px solid transparent;
+}
+.outline:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.top-menu-container{
+    display: flex;
+    align-items: center;
+    padding: 8px 9px;
+    font-size: 0.95rem;  
+}
+.top-menu-container i{
+    font-size: 1.2rem;  
+}
+.top-menu-container p{
+   font-size: 0.95rem;  
+   padding-left: 5px;
+   font-weight: 700;
+}
+
+.top-deal-container{
+    padding: 8px 9px;
+    font-size: 0.90rem;  
+}
+
+
+/* hero-container*/
+.hero-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 0.85rem;
+}
+.hero-container .img{
+    width: 100%;
+    height: 100%;
+    background-image: url('image/hero-img.jpg');
+    background-size: cover;
+    background-position:top;
+}
+.hero-container p{
+    width: 90%;
+    height: 40px;
+    padding: 10px 14px;
+    background-color: #f5f6f6;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+
+}
+
+/* main*/
+
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #D9B9D9;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    height: 380px;
+    background-color: #f5f6f6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    margin: 10px 17px;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 100%;
+    height: 80%;
+    background-position: center;
+    background-size:cover;
+    align-self: center;
+}
+.card a{
+ text-decoration: none;
+ font-size: 0.80rem;
+ color: #007185;
+}
+
+
+/*footer
+
+back to top*/
+
+.back-top{
+    height: 40px;
+    width: 100%;
+    background-color: #485769;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.80rem;
+}
+.footer-column{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-evenly;
+    background-color: #232F3E;
+    color: white;
+    padding-top: 40px;
+    line-height: 25px;
+}
+.footer-column p{
+     font-size: 0.85re;
+    color: #DDDDDD;
+}
+.footer-logo {
+    height: 70px;
+    padding: 0 30%;
+    background-color: #232F3E;
+    border-top: 1px solid #3a4553;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo img{
+    height: 20px;
+    width: auto;
+    background-position: center;
+}
+.footer-logo .content-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.footer-logo .content{
+    display: flex;
+    align-items: center;
+    font-size: 0.80rem;
+    color: #CCC;
+    padding: 6px 8px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    margin-left: 6px;
+}
+.footer-logo .content p{
+  padding-left: 8px;
+}
+
+.copyright{
+    background-color: #131A22;
+    color: #CCC;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    line-height: 18px;
+    padding: 40px 0;
+}
+@media (max-width: 700px) {
+    * {
+        font-size: 10px;
+    }
+    .card{
+        width: 200px;
+        height: 280px;
+        padding: 10px 7px;
+        margin: 5px 8px;
+    }
+    
 }
